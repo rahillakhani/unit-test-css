@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "tape test.js | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/rahillakhani/unit-test-css/issues"
   },
-  "homepage": "https://github.com/rahillakhani/unit-test-css#readme"
+  "homepage": "https://github.com/rahillakhani/unit-test-css#readme",
+  "devDependencies": {
+    "tape": "^4.8.0",
+    "tape-catch": "^1.0.6",
+    "tape-css": "^1.0.2-beta"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "jsdom": "^11.2.0",
+    "tap-spec": "^4.1.1"
+  }
 }
